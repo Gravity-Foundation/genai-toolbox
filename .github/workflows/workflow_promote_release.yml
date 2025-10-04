@@ -23,7 +23,7 @@ jobs:
         id: pipeline_data
         env:
           BASE: ${{ github.event.pull_request.base.sha }}
-          COMPARE: ${{ github.sha }}
+          COMPARE: ${{ github.event.pull_request.head.sha }}
         run: |
           .github/workflows/utils/pipeline_data.sh
 
