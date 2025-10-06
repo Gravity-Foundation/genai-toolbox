@@ -1,11 +1,11 @@
 name: Release
-run-name: 'Releasing: ${{ github.event.pull_request.title }}'
+run-name: "Releasing: ${{ github.event.pull_request.title }}"
 
 on:
   pull_request:
-    types: [ closed ]
+    types: [closed]
     branches:
-      - main
+      - orion-main
 
 jobs:
   pipeline_data:
